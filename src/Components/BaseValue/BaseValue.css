@@ -1,0 +1,11 @@
+
+.BaseValue{
+  display: inline-block;
+  width:45%; 
+}
+
+.BaseCode{
+  display: inline-block;
+  width:15%;
+  margin-left: 25%;
+}
