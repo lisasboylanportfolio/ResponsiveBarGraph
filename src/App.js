@@ -9,7 +9,7 @@ function buildBar(rates)
     // rates is an arraay of objects
     // the objects are {countryCode:rate}
     // we want [countryCode:style]
-    console.log("In buildBar");
+    console.log("In Apps.buildBar()");
         
     const bars = Object.entries(rates);
     
@@ -31,14 +31,14 @@ function buildBar(rates)
 function getFetchUrl(baseCode)
 {
     // Remove new base from comparator
-    console.log("In GetSelect");
+    console.log("In App.getFetchUrl(()");
     
     // Currently displayed currencies;
     let symbols = ["BGN", "SGD", "AUD", "EUR", "USD"];
     let comparator = "BGN,SGD,AUD,EUR,USD";
     
     // Get the requested base currency
-    console.log("baseCode:", baseCode);
+    console.log("App.getFetchUrl().baseCode:", baseCode);
         
     // find the code in symbols
     let i = 0;    
@@ -47,12 +47,12 @@ function getFetchUrl(baseCode)
     i--;  // reposition counter to new baseCode
     if (symbols[i] === baseCode)
     {
-        comparator = symbols.splice(i,1);  // remmove element
+        comparator = symbols.splice(i,1);  // remove element
     }
-    console.log("symbols:", comparator);
+    console.log("App.getFetchUrl().symbols:", comparator);
     
     let fetchString='https://api.exchangeratesapi.io/2018-11-01?base=' + baseCode + "&symbols=" + symbols;
-    console.log("new fetch string=", fetchString);
+    console.log("App.getFetchUrl().fetchString=", fetchString);
     return(fetchString);
 }
 
@@ -67,20 +67,21 @@ class App extends Component
 
   // Add data during initial page load. Kind of like constructor
   componentDidMount = () => {
-    console.log("In did Mount and State:", this.state);
+    console.log("App.componentDidMount.state:", this.state);
     const url = "https://api.exchangeratesapi.io/latest?base=USD&symbols=BGN,GBP,AUD,EUR"
     this.getData(url, "USD");
   }
 
   render() 
   {
-    console.log("Apps.render");
+    console.log("App.render()");
 
     return (
       <div>
-        <h1 className="Title"> Currency</h1>
+        <h1 className="Title"> Currency Comparator</h1>
           <BaseValue
-              basecode={this.state.baseCode} 
+              basecode={this.state.baseCode}
+              onBaseCodeChange = {this.onBaseCodeChange.bind(this)}
           />
           <Graph 
                 className="Graph"
@@ -89,18 +90,29 @@ class App extends Component
       </div>
     );
   }
-
-  onBaseCodeChange = (ev) => {
+ 
+  onBaseCodeChange=(ev) =>{
+     console.log("In onBaseCodeChange");
+     console.log("ev=", ev);
       const code = ev.target.value;
       const url =  getFetchUrl(code);
    
       // Make request
-      this.getData(url, code);
+    this.getData(url, code);
   }
+   //onBaseCodeChange (ev)
+   //{
+   //   console.log("In App.onBaseCodeChange()");    
+   //   const code = ev.target.value;
+   //   const url =  getFetchUrl(code);
+   //
+      // Make request
+   //   this.getData(url, code);
+  //} 
 
   getData(url,code)
   { 
-    console.log("In GetData");
+    console.log("In App.GetData()");
   
      fetch(url)
      .then(response => response.json())

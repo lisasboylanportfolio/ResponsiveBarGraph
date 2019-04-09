@@ -16,13 +16,12 @@ class Bar extends Component {
     return(
         <div className={this.props.className} onClick={this.showAlert} style={this.props.style}>
         {this.props.title}
-        {this.props.symbol}
         </div>      
     )
   }
 
 showAlert=(ev) =>{
-  this.showAlert ? alert("You may choose a Base Code"): ev.preventDefault();
+  this.showAlert ? alert("You may choose a different Base Currency from the selection box above."): ev.preventDefault();
   this.setState({
        showAlert:true
    });

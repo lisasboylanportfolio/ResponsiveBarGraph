@@ -4,7 +4,6 @@ import './BaseValue.css';
 class BaseValue extends Component 
 {
 
-
   render()
   {
         console.log("In BasaeValue:render()");
@@ -16,9 +15,9 @@ class BaseValue extends Component
             <select
               basecode={this.props.baseCode} 
               className="BaseCode" 
-              onChange={this.onBaseCodeChange}>
+              onChange={this.props.onBaseCodeChange}>
               
-              <option value="USA">USA</option>
+              <option value="USD">USD</option>
               <option value="AUD">AUD</option>
               <option value="SGD">SGD</option>
               <option value="EUR">EUR</option>
@@ -27,5 +26,4 @@ class BaseValue extends Component
         )
    }
 }
-
 export default BaseValue
