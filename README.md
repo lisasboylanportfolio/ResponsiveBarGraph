@@ -10,6 +10,7 @@ https://api.exchangeratesapi.io/latest?base=USD
 The followoing countries are compared by setting the symbols parameter:
 https://api.exchangeratesapi.io/latest?symbols=USD,EUR,AUD,GBP,BRL
 
+Deployed to Heroku.
 To run:
-
+https://responsivebargraph.herokuapp.com/
 
