@@ -23,9 +23,9 @@ Built with:
 
       CSS
 
-      Templating
+      React
 
-      Django
+      JavaScript
 
       Heroku Deployment
    
@@ -33,21 +33,11 @@ Built with:
 To Run (Heroku):
 
    
-      https://lisasboylan.herokuapp.com/ 
+     https://responsivebargraph.herokuapp.com/
       
       
 To Administer:
 
 
-      https://git.heroku.com/lisasboylan.git
-
-
-
-
-
-
-
-Deployed to Heroku.
-To run:
-https://responsivebargraph.herokuapp.com/
+      https://git.heroku.com/responsivebargraph.git
 
