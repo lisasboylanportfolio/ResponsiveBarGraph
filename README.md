@@ -31,9 +31,9 @@ Built with:
    
 
 To Run (Heroku):
-
    
-     https://responsivebargraph.herokuapp.com/
+
+      https://responsivebargraph.herokuapp.com/     
       
       
 To Administer:
