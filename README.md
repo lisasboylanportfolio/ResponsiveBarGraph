@@ -1,7 +1,6 @@
 Currency Comparator
 ===================
 ![Graph Image](img/responsivebargraph.png)
-
 The Currency Exchange Rate Bar Chart compares exchange rates of varying countries.
 
 # __API__
@@ -32,7 +31,7 @@ If the user clicks on a bar in the graph, an alert box displays instructions to 
       Heroku Deployment
    
 
-# __To Run (Heroku)__
+#To Run (Heroku)
    [Responsive Bar Graph](https://responsivebargraph.herokuapp.com/)
       
       
