@@ -1,3 +1,5 @@
+![screenshott]http:img/responsivebargraph.png
+
 Currency Comparator
 ===================
 
