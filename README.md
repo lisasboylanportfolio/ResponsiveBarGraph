@@ -1,11 +1,11 @@
-![alt text]http:img/responsivebargraph.png
+![alt text](http:img/responsivebargraph.png)
 
 Currency Comparator
 ===================
 
 The Currency Exchange Rate Bar Chart compares exchange rates of varying countries.
 
-The exchange rates are collected from exchangeratesapi.io/api/latest
+The exchange rates are collected from [link to API](https://exchangeratesapi.io/api/latest)
 
 A bar graph depicts the forgeign exchange rates with currency conversion.
 
@@ -33,9 +33,7 @@ Built with:
    
 
 To Run (Heroku):
-   
-
-      https://responsivebargraph.herokuapp.com/     
+   [link to Responsive Bar Graph](https://responsivebargraph.herokuapp.com/)
       
       
 To Administer:
