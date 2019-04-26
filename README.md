@@ -1,4 +1,4 @@
-![alt text](http:img/responsivebargraph.png)
+![Graph Image](http:img/responsivebargraph.png)
 
 Currency Comparator
 ===================
@@ -9,8 +9,8 @@ The exchange rates are collected from [link to API](https://exchangeratesapi.io/
 
 A bar graph depicts the forgeign exchange rates with currency conversion.
 
-The rates are quoted against the default base currency, USD (US dollar), by setting the parameter:
-https://api.exchangeratesapi.io/latest?base=USD. The base currency can be changed using the 'select' box in the application.
+The rates are quoted against the default base currency, USD (US dollar), by setting the parameter:base=USD. 
+The base currency can be changed using the 'select' box in the application.
 
 The followoing countries are compared by setting the symbols parameter: symbols=USD,EUR,AUD,GBP,BRL
 
@@ -32,7 +32,7 @@ Built with:
    
 
 To Run (Heroku):
-   [link to Responsive Bar Graph](https://responsivebargraph.herokuapp.com/)
+   [Responsive Bar Graph](https://responsivebargraph.herokuapp.com/)
       
       
 To Administer:
