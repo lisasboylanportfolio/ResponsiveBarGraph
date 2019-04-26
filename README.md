@@ -1,4 +1,4 @@
-![screenshot]http:img/responsivebargraph.png
+![alt text]http:img/responsivebargraph.png
 
 Currency Comparator
 ===================
