@@ -29,7 +29,7 @@ If the user clicks on a bar in the graph, an alert box displays instructions to 
       Heroku Deployment
    
 
-#To Run (Heroku)
+# To Run (Heroku)
    [Responsive Bar Graph](https://responsivebargraph.herokuapp.com/)
       
       
