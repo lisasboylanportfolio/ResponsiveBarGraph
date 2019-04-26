@@ -1,11 +1,10 @@
-![Graph Image](img/responsivebargraph.png)
-
-__Currency Comparator__
+Currency Comparator
 ===================
+![Graph Image](img/responsivebargraph.png)
 
 The Currency Exchange Rate Bar Chart compares exchange rates of varying countries.
 
-# API
+# __API__
 The exchange rates are collected from [Exchange API](https://exchangeratesapi.io/)
 
 A bar graph depicts the forgeign exchange rates with currency conversion.
@@ -19,7 +18,7 @@ The followoing countries are compared by setting the symbols parameter: symbols=
 If the user clicks on a bar in the graph, an alert box displays instructions to change the base currency.
 
 
-# Built with
+# __Technology__
 
 
       HTML
@@ -33,7 +32,7 @@ If the user clicks on a bar in the graph, an alert box displays instructions to 
       Heroku Deployment
    
 
-# To Run (Heroku):
+# __To Run (Heroku)__
    [Responsive Bar Graph](https://responsivebargraph.herokuapp.com/)
       
       
