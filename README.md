@@ -12,8 +12,7 @@ A bar graph depicts the forgeign exchange rates with currency conversion.
 The rates are quoted against the default base currency, USD (US dollar), by setting the parameter:
 https://api.exchangeratesapi.io/latest?base=USD. The base currency can be changed using the 'select' box in the application.
 
-The followoing countries are compared by setting the symbols parameter:
-https://api.exchangeratesapi.io/latest?symbols=USD,EUR,AUD,GBP,BRL
+The followoing countries are compared by setting the symbols parameter: symbols=USD,EUR,AUD,GBP,BRL
 
 If the user clicks on a bar in the graph, an alert box displays instructions to change the base currency.
 
